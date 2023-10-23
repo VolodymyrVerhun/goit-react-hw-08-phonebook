@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/680.16158398.chunk.js","mappings":"wMAEe,SAASA,IACtB,OACE,0BACE,wBAAI,oBAGT,C","sources":["pages/HomePage/HomePage.jsx"],"sourcesContent":["import React from 'react';\n\nexport default function HomePage() {\n  return (\n    <div>\n      <h1>It is HomePage</h1>\n    </div>\n  );\n}\n\n//adfasfdsf\n"],"names":["HomePage"],"sourceRoot":""}
