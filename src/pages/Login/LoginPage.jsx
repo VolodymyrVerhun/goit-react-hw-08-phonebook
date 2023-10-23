@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { loginUser } from 'redux/authSlice';
+import style from './LoginPage.module.css';
 
 export default function LoginPage() {
   const dispatch = useDispatch();
@@ -18,12 +19,13 @@ export default function LoginPage() {
   };
 
   return (
-    <div>
-      <h1>LoginPage</h1>
-      <form onSubmit={handleSubmit}>
+    <div className={style.block}>
+      <h1 className={style.tittle}>Please, log in</h1>
+      <form className={style.form} onSubmit={handleSubmit}>
         <label>
-          <span>Email:</span>
+          <span className={style.span}>Email:</span>
           <input
+            className={style.input}
             type="email"
             name="userEmail"
             placeholder="Enter your email..."
@@ -31,8 +33,9 @@ export default function LoginPage() {
           />
         </label>
         <label>
-          <span>Password:</span>
+          <span className={style.span}>Password:</span>
           <input
+            className={style.input}
             type="passwiord"
             name="userPassword"
             placeholder="Enter your password..."
@@ -40,7 +43,9 @@ export default function LoginPage() {
             required
           />
         </label>
-        <button type="submit">Login</button>
+        <button className={style.btn} type="submit">
+          Login
+        </button>
       </form>
     </div>
   );

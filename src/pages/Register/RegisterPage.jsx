@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { registerUser } from 'redux/authSlice';
+import style from './RegisterPage.module.css';
 
 export default function RegisterPage() {
   const dispatch = useDispatch();
@@ -19,12 +20,13 @@ export default function RegisterPage() {
     dispatch(registerUser(formData));
   };
   return (
-    <div>
-      <h1>Register</h1>
-      <form onSubmit={handleSubmit}>
+    <div className={style.block}>
+      <h1 className={style.tittle}>Please, register</h1>
+      <form className={style.form} onSubmit={handleSubmit}>
         <label>
-          <span>Username:</span>
+          <span className={style.span}>Username:</span>
           <input
+            className={style.input}
             type="text"
             name="userName"
             placeholder="Enter your name..."
@@ -32,8 +34,9 @@ export default function RegisterPage() {
           />
         </label>
         <label>
-          <span>Email:</span>
+          <span className={style.span}>Email:</span>
           <input
+            className={style.input}
             type="email"
             name="userEmail"
             placeholder="Enter your email..."
@@ -41,8 +44,9 @@ export default function RegisterPage() {
           />
         </label>
         <label>
-          <span>Password:</span>
+          <span className={style.span}>Password:</span>
           <input
+            className={style.input}
             type="passwiord"
             name="userPassword"
             placeholder="Enter your password..."
@@ -50,7 +54,9 @@ export default function RegisterPage() {
             required
           />
         </label>
-        <button type="submit">Register</button>
+        <button className={style.btn} type="submit">
+          Register
+        </button>
       </form>
     </div>
   );

@@ -13,8 +13,10 @@ const NotFound = lazy(() => import('pages/NotFound'));
 export function App() {
   return (
     <div className={style.phonebook}>
-      <h1 className={style.title}>Phonebook</h1>
-      <Navigation />
+      <div className={style.head}>
+        <h1 className={style.title}>Phonebook</h1>
+        <Navigation />
+      </div>
       <Suspense fallback={<Loader />}>
         <Routes>
           {appRoutes.map(({ path, element }) => (

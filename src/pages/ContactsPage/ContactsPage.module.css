@@ -1,0 +1,99 @@
+.block {
+  padding-left: 80px;
+}
+.tittle {
+  color: black;
+  font-weight: 400;
+  font-size: 36px;
+}
+.form {
+  padding: 30px;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 0px 36px 24px rgba(35, 59, 29, 0.57) inset;
+  -webkit-box-shadow: 0px 0px 36px 24px rgba(35, 59, 29, 0.57) inset;
+  -moz-box-shadow: 0px 0px 36px 24px rgba(35, 59, 29, 0.57) inset;
+}
+.input {
+  padding: 10px;
+  margin: 10px;
+  height: 40px;
+  font-size: 20px;
+  width: 70%;
+  border-radius: 5px;
+
+  border: none;
+  background-color: rgba(17, 47, 219, 0.281);
+}
+.span {
+  display: block;
+
+  color: rgb(46, 32, 197);
+}
+.btn {
+  margin: 10px;
+  height: 40px;
+  font-size: 20px;
+
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(32, 155, 71, 0.612);
+}
+ul {
+  display: flex;
+  flex-direction: column;
+}
+.flex_block {
+  display: flex;
+  max-height: 80%;
+}
+.container {
+  margin-left: 30px;
+  width: 50%;
+  height: 400px;
+  overflow: auto;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.list li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.li {
+  display: flex;
+  justify-content: space-between;
+}
+.btndel {
+  background-color: rgba(151, 36, 36, 0.595);
+  margin: 10px;
+  height: 40px;
+  font-size: 20px;
+
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.b {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10px;
+  color: rgb(67, 67, 168);
+}

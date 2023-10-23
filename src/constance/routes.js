@@ -7,10 +7,10 @@ export const CONTACTS_ROUTE = '/contacts';
 export const LOGIN_ROUTE = '/login';
 export const REGISTER_ROUTE = '/register';
 
-const HomePage = lazy(() => import('pages/HomePage'));
-const ContactsPage = lazy(() => import('pages/ContactsPage'));
-const RegisterPage = lazy(() => import('pages/RegisterPage'));
-const LoginPage = lazy(() => import('pages/LoginPage'));
+const HomePage = lazy(() => import('pages/HomePage/HomePage'));
+const ContactsPage = lazy(() => import('pages/ContactsPage/ContactsPage'));
+const RegisterPage = lazy(() => import('pages/Register/RegisterPage'));
+const LoginPage = lazy(() => import('pages/Login/LoginPage'));
 
 export const appRoutes = [
   {

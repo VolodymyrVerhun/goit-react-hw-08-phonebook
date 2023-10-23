@@ -1,7 +1,33 @@
 .nav {
   display: flex;
   justify-content: flex-end;
-  padding-right: 200px;
+  padding-right: 100px;
   border-top: 1px solid;
   padding-top: 10px;
+}
+
+.link,
+.btn {
+  margin: 5px;
+  text-decoration: none;
+  background-color: rgba(98, 128, 219, 0.459);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.link .active {
+  background-color: rgba(21, 199, 33, 0.459);
+}
+.span {
+  margin-left: 50px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 600;
 }

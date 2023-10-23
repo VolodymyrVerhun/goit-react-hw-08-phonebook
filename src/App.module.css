@@ -4,13 +4,17 @@
   text-align: start;
   align-items: center;
   font-size: 16px;
-  padding-left: 40px;
 
   background-color: rgb(212, 206, 206);
 }
 
 .title {
-  padding-top: 20px;
+  padding: 20px;
   margin-top: 0;
   margin-bottom: 0;
+}
+.head {
+  padding-bottom: 10px;
+  background-color: rgba(133, 147, 147, 0.577);
+  border-bottom: 1px solid black;
 }

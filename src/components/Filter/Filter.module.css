@@ -1,0 +1,28 @@
+.block {
+  padding-left: 80px;
+}
+
+.form {
+  padding: 30px;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 0px 36px 24px rgba(35, 59, 29, 0.57) inset;
+  -webkit-box-shadow: 0px 0px 36px 24px rgba(35, 59, 29, 0.57) inset;
+  -moz-box-shadow: 0px 0px 36px 24px rgba(35, 59, 29, 0.57) inset;
+}
+.input {
+  padding: 10px;
+  margin: 10px;
+  height: 40px;
+  font-size: 20px;
+  width: 70%;
+  border-radius: 5px;
+
+  border: none;
+  background-color: rgba(17, 47, 219, 0.281);
+}

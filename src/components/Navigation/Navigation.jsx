@@ -28,17 +28,27 @@ export default function Navigation() {
   }, [dispatch]);
   return (
     <nav className={style.nav}>
-      <NavLink to={HOME_ROUTE}>Home</NavLink>
+      <NavLink className={style.link} to={HOME_ROUTE}>
+        Home
+      </NavLink>
       {authenticated ? (
         <>
-          <NavLink to={CONTACTS_ROUTE}>Contacts</NavLink>
-          <span>Hello, {userData.name}</span>
-          <button onClick={handleLogout}>Log out</button>
+          <NavLink className={style.link} to={CONTACTS_ROUTE}>
+            Contacts
+          </NavLink>
+          <span className={style.span}>Hello, {userData.name}</span>
+          <button className={style.btn} onClick={handleLogout}>
+            Log out <b>{userData.name}</b>
+          </button>
         </>
       ) : (
         <>
-          <NavLink to={LOGIN_ROUTE}>Login</NavLink>
-          <NavLink to={REGISTER_ROUTE}>Register</NavLink>
+          <NavLink className={style.link} to={LOGIN_ROUTE}>
+            Login
+          </NavLink>
+          <NavLink className={style.link} to={REGISTER_ROUTE}>
+            Register
+          </NavLink>
         </>
       )}
     </nav>
